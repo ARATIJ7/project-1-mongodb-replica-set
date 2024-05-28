@@ -1,0 +1,5 @@
+# key_pair.tf
+resource "aws_key_pair" "deployer" {
+  key_name   = var.key_name
+  public_key = var.ssh_public_key
+}
